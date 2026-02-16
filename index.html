@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Happy Birthday ❤️</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+  
+<div class="start-screen" onclick="startSurprise()">
+  <h1>Tap to open your surprise 🎁</h1>
+</div>
+
+<div class="main" id="main">
+  <audio id="bgMusic">
+    <source src="audio/song1.mpeg" type="audio/mpeg">
+  </audio>
+
+  <h1 class="title">Happy Birthday My Love 💖</h1>
+
+  <p class="message">
+    You are not just a part of my life,  
+    you are the reason my life smiles 💕  
+    Today is special because **YOU** were born ✨ </p>
+  <div class="video-modal" id="galleryVideoModal">
+    <span class="close" onclick="closeVideo()">X</span>
+    <video id="galleryVideo" controls> Your browser does not support video.</video>
+  </div>
+<div class="flip-gallery">
+
+  <div class="card active" onclick="openVideo(0)">
+    <img src="images/img 4.jfif">
+    <p class="photo-caption">My Happiness..🤗</p>
+  </div>
+
+  <div class="card" onclick="openVideo(1)">
+    <img src="images/img 2.jfif">
+    <p class="photo-caption">Mudivum Nee.....😘</p>
+  </div>
+
+  <div class="card" onclick="openVideo(2)">
+    <img src="images/img 5.jfif">
+    <p class="photo-caption">My Whole Chapter..💋</p>
+  </div>
+
+  <div class="card" onclick="openVideo(3)">
+    <img src="images/img 3.jfif">
+    <p class="photo-caption">You Change Me..❤️</p>
+  </div>
+
+  <div class="card" onclick="openVideo(4)">
+    <img src="images/img 6.jfif">
+    <p class="photo-caption">One Decision..✨</p>
+  </div>
+
+  <div class="card" onclick="openVideo(5)">
+    <img src="images/img 1.jfif">
+    <p class="photo-caption">Avan💕👀</p>
+  </div>
+  <div class="card" onclick="openVideo(6)">
+    <img src="images/img 7.jfif">
+    <p class="photo-caption">Always Choose You..😍</p>
+  </div>
+  <div class="card" onclick="openVideo(7)">
+    <img src="images/img 9.jfif">
+    <p class="photo-caption">My Moon..🌝</p>
+  </div>
+
+</div>
+ <div class="final">
+  <h2>Forever Yours 💞</h2>
+  <p>Once again, Happy Birthday 🎂</p>
+
+  <button class="open-letter-btn" onclick="openLetter()">
+    Open My Letter 💌
+  </button>
+</div>
+
+
+<div class="video-modal" id="finalVideoModal">
+  <span class="close" onclick="closeFinalVideo()">X</span>
+  <video id="finalVideo" controls></video>
+  <div id="videoCaption" class="video-caption">
+    <span id="captionText"></span>
+  </div>
+  <div id="captionHearts" class="caption-hearts"></div>
+</div>
+<div class="after-letter" id="afterLetter">
+  <p id="finalLine"></p>
+  <button class="open-letter-btn" onclick="startFinalVideo()">Start </button>
+  </div>
+  <div class="fade-screen" id="fadeScreen"></div>
+  <div class="heart-burst" id="heartBurst"></div>
+  <div class="letter-modal" id="letterModal">
+    <div class="letter-box">
+      <span class="close" onclick="closeLetter()">✖</span>
+      <h2>My Love 💖</h2>
+      <p id="typedText"></p>
+      <button class="finish-btn" onclick="finishLetter()">Finish</button>
+    </div>
+  </div>
+<script src="script.js"></script>
+</body>
+</html>
