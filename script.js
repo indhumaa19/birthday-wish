@@ -57,14 +57,14 @@ function burstHearts(){
 /* 🎥 VIDEOS */
 
 const videos = [
-  "videos/vid.mp4",
-  "videos/vid4.mp4",
-  "videos/vid2.mp4",
-  "videos/vid3.mp4",
-  "videos/vid7.mp4",
-  "videos/vid8.mp4",
-  "videos/vid1.mp4",
-  "videos/vid6.mp4"
+  ".mp4",
+  "4.mp4",
+  "2.mp4",
+  "3.mp4",
+  "7.mp4",
+  "8.mp4",
+  "1.mp4",
+  "6.mp4"
 ];
 
 let currentIndex = 0;
@@ -224,7 +224,7 @@ function playFinalVideo(){
   const video = document.getElementById("finalVideo");
 
   if(video && modal){
-    video.src = "videos/final.mp4";   // 🎥 YOUR FINAL VIDEO
+    video.src = "final.mp4";   // 🎥 YOUR FINAL VIDEO
     modal.style.display = "flex";
     video.play();
     setupCaptions();
@@ -290,3 +290,4 @@ function showNextPhoto(){
     cards[currentIndex].classList.add("active");
   }
 }
+
