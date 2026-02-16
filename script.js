@@ -57,8 +57,8 @@ function burstHearts(){
 /* 🎥 VIDEOS */
 
 const videos = [
-  ".mp4",
-  "4.mp4",
+  "vid.mp4",
+  "vid4.mp4",
   "2.mp4",
   "3.mp4",
   "7.mp4",
@@ -290,4 +290,5 @@ function showNextPhoto(){
     cards[currentIndex].classList.add("active");
   }
 }
+
 
