@@ -59,8 +59,8 @@ function burstHearts(){
 const videos = [
   "vid.mp4",
   "vid4.mp4",
-  "vid 2.mp4",
-  "vid 3.mp4",
+  "vid2.mp4",
+  "vid3.mp4",
   "vid7.mp4",
   "vid8.mp4",
   "vid1.mp4",
@@ -290,6 +290,7 @@ function showNextPhoto(){
     cards[currentIndex].classList.add("active");
   }
 }
+
 
 
 
